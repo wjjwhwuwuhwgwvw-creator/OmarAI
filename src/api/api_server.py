@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from fastapi import FastAPI, HTTPException, BackgroundTasks, Request
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Request, Response
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import asyncio
@@ -482,6 +482,24 @@ async def root():
         ],
         "stats": stats
     }
+
+@app.head("/download/{package_name}")
+async def head_download_apk(package_name: str):
+    """Return file size without downloading - for size check before download"""
+    for ext in ['.xapk', '.apk', '.apks']:
+        cached_path = os.path.join(DOWNLOADS_DIR, f"{package_name}{ext}")
+        if os.path.exists(cached_path):
+            file_size = os.path.getsize(cached_path)
+            if file_size > 100000:
+                return Response(
+                    content=b"",
+                    headers={
+                        "Content-Length": str(file_size),
+                        "X-File-Type": ext[1:],
+                        "X-Cached": "true"
+                    }
+                )
+    return Response(content=b"", headers={"Content-Length": "0", "X-Cached": "false"})
 
 @app.get("/download/{package_name}")
 async def download_apk(package_name: str, background_tasks: BackgroundTasks, force_apkeep: bool = False, request: Request = None):

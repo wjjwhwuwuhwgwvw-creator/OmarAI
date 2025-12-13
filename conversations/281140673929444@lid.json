@@ -1,6 +1,6 @@
 {
   "userId": "281140673929444@lid",
-  "lastUpdated": "2025-12-13T16:13:31.555Z",
+  "lastUpdated": "2025-12-13T16:14:35.783Z",
   "messages": [
     {
       "role": "model",
@@ -11,6 +11,11 @@
       "role": "model",
       "text": "✅ تم إرسال تطبيق \"West Gunfighter\" (XAPK, 57.0 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
       "timestamp": "2025-12-13T16:13:31.555Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. ZArchiver (appId: ru.zdevs.zarchiver)\n2. ZArchiver Cloud Plugin (appId: ru.zdevs.zarchivercloud)\n3. zarchiver (appId: com.ZArchiver.chengyuda)\n4. ZArchiver Donate (appId: ru.zdevs.zarchiver.pro)\n5. ZarcHiver Free Pro (appId: com.freepro.zarchiver.pro)\n6. ZArchiver - Unzip 7zip Zip RAR (appId: com.zizhong.filemanager)\n7. Z Archiver - Zip & Unzip Files Free Android (appId: unziparchiver.rarlab.easyzipfiles.free)\n8. File Manager (appId: com.alphainventor.filemanager)\n9. Cx File Explorer (appId: com.cxinventor.file.explorer)\n10. 7Zipper - File Explorer (zip, (appId: org.joa.zipperplus7)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:14:35.783Z"
     }
   ]
 }
