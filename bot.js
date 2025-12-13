@@ -1,5 +1,19 @@
 import 'dotenv/config';
 import baileys from '@itsukichan/baileys';
+
+// معالج الأخطاء العامة - يمنع توقف البوت
+process.on('unhandledRejection', (reason, promise) => {
+    const errorMsg = reason?.message || String(reason);
+    if (errorMsg.includes('Timed Out') || errorMsg.includes('Request Time-out')) {
+        console.log('⚠️ Timeout حدث - البوت مستمر في العمل...');
+    } else {
+        console.error('⚠️ خطأ غير معالج:', errorMsg);
+    }
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('⚠️ استثناء غير ملتقط:', error.message);
+});
 const { default: makeWASocket, DisconnectReason, Browsers, jidDecode, jidNormalizedUser, useMultiFileAuthState, downloadMediaMessage, proto, generateWAMessageFromContent, makeCacheableSignalKeyStore } = baileys;
 import { Boom } from '@hapi/boom';
 import pino from 'pino';
@@ -23,8 +37,8 @@ const API_SERVER_URL = 'http://localhost:8000';
 // Bot Mode: 'all' = groups + private, 'groups' = groups only, 'private' = private only
 let BOT_MODE = 'all';
 
-// 2GB limit for regular users (VIP and Admin can download larger files)
-const MAX_REGULAR_USER_SIZE = 2 * 1024 * 1024 * 1024; // 2GB
+// 1.9GB limit for regular users (VIP and Admin can download larger files)
+const MAX_REGULAR_USER_SIZE = 1.9 * 1024 * 1024 * 1024; // 1.9GB - same as WhatsApp limit
 
 // Check if user can download large files
 function canDownloadLargeFile(senderPhone, isAdmin) {
@@ -1726,9 +1740,9 @@ async function connectToWhatsApp() {
         syncFullHistory: false,
         markOnlineOnConnect: false,
         generateHighQualityLinkPreview: false,
-        defaultQueryTimeoutMs: 120000,
+        defaultQueryTimeoutMs: 600000,
         keepAliveIntervalMs: 25000,
-        connectTimeoutMs: 60000,
+        connectTimeoutMs: 600000,
         retryRequestDelayMs: 1500,
         emitOwnEvents: false,
         fireInitQueries: true,
@@ -3290,8 +3304,8 @@ async function handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appI
 ◄ الحد المسموح: *2 جيغا*
 
 ⭐ *باش تحمّل تطبيقات أكبر من 2GB:*
-◄ كن VIP عضو
-◄ أو تواصل مع المطور
+◄ تابع المطور على انستجرام للحصول على VIP مجاناً! 📸
+◄ https://www.instagram.com/omarxarafp
 
 💡 جرب تطبيق آخر أصغر${POWERED_BY}` 
             }, msg);
