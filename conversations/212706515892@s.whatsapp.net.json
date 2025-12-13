@@ -1,0 +1,16 @@
+{
+  "userId": "212706515892@s.whatsapp.net",
+  "lastUpdated": "2025-12-12T12:57:39.222Z",
+  "messages": [
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. facebook lite (appId: facebook.lite396)\n2. Facebook (appId: com.facebook.katana)\n3. Facebook Lite (appId: com.facebook.lite)\n4. Background Changer and Remover (appId: com.svrapps.backgrounderaser)\n5. Facebook Creator (appId: com.facebook.creatorapp)\n6. Facebook Mentions (appId: com.facebook.Mentions)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-12T12:57:25.672Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"facebook lite\" (APK, 9.2 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-12T12:57:39.222Z"
+    }
+  ]
+}

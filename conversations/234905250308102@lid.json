@@ -1,0 +1,46 @@
+{
+  "userId": "234905250308102@lid",
+  "lastUpdated": "2025-12-13T09:43:25.824Z",
+  "messages": [
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Facebook (appId: com.facebook.katana)\n2. TikTok (appId: com.zhiliaoapp.musically)\n3. TikTok (Asia) (appId: com.ss.android.ugc.trill)\n4. Flash (appId: com.facebook.flash)\n5. Facebook Lite (appId: com.facebook.lite)\n6. Messenger (appId: com.facebook.orca)\n7. Instagram (appId: com.instagram.android)\n8. facebook lite (appId: facebook.lite396)\n9. Facebook 360 (appId: com.facebook.akira)\n10. Facebook Creator (appId: com.facebook.creatorapp)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T09:40:29.300Z"
+    },
+    {
+      "role": "model",
+      "text": "عرضت للمستخدم نتائج البحث عن \"Facebook lite\":\n1. Facebook Lite\n2. Messenger Lite\n3. Facebook lite\n4. facebook lite\n5. Messenger\n6. Facebook\n7. Lite Facebook Messenger\n8. Mini for Facebook Lite\n9. Facebook Creator\n10. Lite for Facebook - Lite Messenger\nالمستخدم يمكنه اختيار رقم أو طلب شيء آخر.",
+      "timestamp": "2025-12-13T09:40:36.283Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"Facebook Lite\" (APK, 2.9 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-13T09:40:53.189Z"
+    },
+    {
+      "role": "user",
+      "text": "5",
+      "timestamp": "2025-12-13T09:40:55.866Z"
+    },
+    {
+      "role": "model",
+      "text": "{\"action\": \"reply\", \"message\": \"واخا، فهمتك. تطبيق Facebook Lite وصلك دابا. شنو ممكن نزيدك؟ واش بغيتي شي تطبيق آخر ولا شي حاجة بحال تحميل فيديو؟\"}",
+      "timestamp": "2025-12-13T09:40:55.866Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Messenger (appId: com.facebook.orca)\n2. WhatsApp Messenger (appId: com.whatsapp)\n3. ماسنجر جديد وسريع 2025 (appId: com.mmsngerer.app)\n4. Messenger SMS: Messages Home (appId: messenger.sms.launcher.home.screen)\n5. Messenger: Text Messages, SMS (appId: com.smscolorful.formessenger.messages)\n6. Messenger - Color SMS (appId: com.cutestudio.led.color.sms)\n7. The Messenger for Messages (appId: com.messenger.messengerpro.social.chat)\n8. Yandex.Messenger (appId: com.yandex.yamb)\n9. Color Messenger: Messages, SMS (appId: com.messages.color.messenger.sms)\n10. Zangi Private Messenger (appId: com.beint.zangi)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T09:41:23.941Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Facebook Lite (appId: com.facebook.lite)\n2. Messenger Lite (appId: com.facebook.mlite)\n3. Facebook lite (appId: com.jrcreations.fblite)\n4. facebook lite (appId: facebook.lite396)\n5. Messenger (appId: com.facebook.orca)\n6. Facebook (appId: com.facebook.katana)\n7. Lite Facebook Messenger (appId: com.mavapps.litemessengermini)\n8. Mini for Facebook Lite (appId: com.litefacebook.miniforfacebook)\n9. Facebook Creator (appId: com.facebook.creatorapp)\n10. Lite for Facebook - Lite Messenger (appId: com.facebookmessanger.liteforfacebook)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T09:42:59.015Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"Messenger\" (APK, 70.0 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-13T09:43:25.824Z"
+    }
+  ]
+}

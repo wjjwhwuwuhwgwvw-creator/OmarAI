@@ -1,0 +1,16 @@
+{
+  "userId": "132066553393205@lid",
+  "lastUpdated": "2025-12-13T09:48:34.626Z",
+  "messages": [
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Facebook (appId: com.facebook.katana)\n2. TikTok (appId: com.zhiliaoapp.musically)\n3. TikTok (Asia) (appId: com.ss.android.ugc.trill)\n4. Flash (appId: com.facebook.flash)\n5. Facebook Lite (appId: com.facebook.lite)\n6. Messenger (appId: com.facebook.orca)\n7. Instagram (appId: com.instagram.android)\n8. facebook lite (appId: facebook.lite396)\n9. Facebook 360 (appId: com.facebook.akira)\n10. Facebook Creator (appId: com.facebook.creatorapp)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T09:48:21.763Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"Facebook Lite\" (APK, 2.9 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-13T09:48:34.626Z"
+    }
+  ]
+}
