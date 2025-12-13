@@ -1,0 +1,16 @@
+{
+  "userId": "281140673929444@lid",
+  "lastUpdated": "2025-12-13T16:13:31.555Z",
+  "messages": [
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Dead God Land: Survival Games (appId: com.devvisiongames.deadisland)\n2. Westland Survival: Cowboy Game (appId: com.heliogames.westland)\n3. Dead Dawn (appId: com.starsamong.deaddawn)\n4. West Gunfighter (appId: com.cg.cowboy)\n5. Guns at Dawn: Shooter Online (appId: com.generagames.gunsatdawn.shooter)\n6. Read-Along (appId: com.mindchamps.ebook)\n7. D.E.A.D. (appId: com.pudlus.d.e.a.d)\n8. Dead Rails (appId: dead.rails)\n9. Dead Effect (appId: com.bulkypix.deadeffect)\n10. Dead Reset (appId: com.walesinteractive.deadreset)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:11:52.803Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"West Gunfighter\" (XAPK, 57.0 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-13T16:13:31.555Z"
+    }
+  ]
+}

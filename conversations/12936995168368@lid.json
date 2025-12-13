@@ -1,0 +1,16 @@
+{
+  "userId": "12936995168368@lid",
+  "lastUpdated": "2025-12-13T16:14:07.191Z",
+  "messages": [
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Free Fire: Winterlands (appId: com.dts.freefireth)\n2. Free Fire MAX: Winterlands (appId: com.dts.freefiremax)\n3. Crossfire: Legends (appId: com.tencent.stc.cfl)\n4. Free Fire Advance Server (appId: com.dts.freefireadv)\n5. PUBG MOBILE (appId: com.tencent.ig)\n6. LuluBox - Allow you to unlock all skin of FreeFire (appId: com.lulu.lulubox)\n7. Free Fire (appId: com.dts.freefire)\n8. Free-Fire Guide (appId: com.kigofree.fftipoez)\n9. Free Fire VPN (appId: com.wFreeFireVPN_15623442)\n10. Fire Free! (appId: com.happyelements.GunLord)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:12:17.957Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"Fire Free!\" (XAPK, 212.1 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-13T16:14:07.191Z"
+    }
+  ]
+}

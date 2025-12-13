@@ -1,11 +1,26 @@
 {
   "userId": "67989617512533@lid",
-  "lastUpdated": "2025-12-13T11:50:37.752Z",
+  "lastUpdated": "2025-12-13T16:13:08.165Z",
   "messages": [
     {
       "role": "model",
       "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. GTA: San Andreas - NETFLIX (appId: com.netflix.NGP.GTASanAndreasDefinitiveEdition)\n2. Payback 2 - The Battle Sandbox (appId: net.apex_designs.payback2)\n3. WeChat (appId: com.tencent.mm)\n4. SOREC Maroc (appId: com.appsorec)\n5. Carta Maroc (appId: com.cartamaroc.hezjouj)\n6. Sya9a Maroc (appId: com.mouda3.sya9a)\n7. Maroc Tv (appId: com.marocTv.Livemaroc)\n8. Master Maroc (appId: com.al.master.maroc)\n9. Flormar Maroc (appId: com.flormar.app)\n10. RADIO MAROC (appId: com.myradio.android.morocco)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
       "timestamp": "2025-12-13T11:50:37.752Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Appvn (appId: apps.hunter.com)\n2. GTA: San Andreas - NETFLIX (appId: com.netflix.NGP.GTASanAndreasDefinitiveEdition)\n3. Game GTA San Andreas Hint (appId: jan.oredoo.gta)\n4. guide GTA San Andreas (appId: com.guideforgames.gata5)\n5. GTA San Andreas Minecraft (appId: choch.gtasanandreas.maps)\n6. gta san andreas cheats (appId: com.mobcheats.appgta.hackslist)\n7. GTA San Andreas Radio (appId: nostupid.gtasaradio)\n8. Cheats - GTA San Andreas (appId: es.barragansoftware.gtasancheats)\n9. Guide: GTA San Andreas (appId: com.jtsviolet.guidegta_sanandreas)\n10. Mods for GTA San Andreas (appId: mod.gta.sa)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:12:11.234Z"
+    },
+    {
+      "role": "model",
+      "text": "✅ تم إرسال تطبيق \"GTA San Andreas Minecraft\" (APK, 18.6 MB) للمستخدم بنجاح. التطبيق وصل للمستخدم.",
+      "timestamp": "2025-12-13T16:12:41.291Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Free Fire: Winterlands (appId: com.dts.freefireth)\n2. Free Fire MAX: Winterlands (appId: com.dts.freefiremax)\n3. Crossfire: Legends (appId: com.tencent.stc.cfl)\n4. Free Fire Advance Server (appId: com.dts.freefireadv)\n5. PUBG MOBILE (appId: com.tencent.ig)\n6. LuluBox - Allow you to unlock all skin of FreeFire (appId: com.lulu.lulubox)\n7. Free Fire (appId: com.dts.freefire)\n8. Free-Fire Guide (appId: com.kigofree.fftipoez)\n9. Free Fire VPN (appId: com.wFreeFireVPN_15623442)\n10. Fire Free! (appId: com.happyelements.GunLord)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:13:08.165Z"
     }
   ]
 }

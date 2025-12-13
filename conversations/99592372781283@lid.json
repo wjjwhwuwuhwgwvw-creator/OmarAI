@@ -1,0 +1,21 @@
+{
+  "userId": "99592372781283@lid",
+  "lastUpdated": "2025-12-13T16:13:13.818Z",
+  "messages": [
+    {
+      "role": "user",
+      "text": "[المستخدم يقتبس رسالة سابقة: \"*مرحبا بك في بوت Omar AI* 🤖\n\n📱 *تحميل التطبيقات:*\nصيفط اسم التطبيق وأنا نجيبو ليك\n\n🎬 *تحميل الفيديوهات:*\nFacebook • Instagram • TikTok\nYouTube • Twitter • Pinterest\n\n📁 *تحميل الملفات:*\nMediafire • Google Drive\n\n💡 غير صيفط الرابط أو اسم التطبيق\n\n> Omar AI\"]\n\nرد المستخدم: تطبيق X",
+      "timestamp": "2025-12-13T16:13:12.816Z"
+    },
+    {
+      "role": "model",
+      "text": "{\"action\": \"search_app\", \"query\": \"تطبيق X\"}",
+      "timestamp": "2025-12-13T16:13:12.816Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. X (appId: com.twitter.android)\n2. Anime X (appId: com.w7orld.animex.huawei)\n3. X - Lite (appId: com.xlite.twitter)\n4. Coding X : Learn Python, Java (appId: codingx.coding.programming.learn.learntocode.code.java.python.program.delevopment.it.apps.dev)\n5. Slendrina X (appId: com.dvloper.slendrinax)\n6. X Launcher (appId: com.ioslauncher.free2)\n7. Higher (appId: com.dalcomsoft.mysu.a)\n8. Anime X (appId: com.w7orld.animex)\n9. LotusLamp X (appId: com.szelk.ledlamppro)\n10. Nothing X (appId: com.nothing.smartcenter)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:13:13.818Z"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "userId": "145741662134497@lid",
+  "lastUpdated": "2025-12-13T16:13:38.038Z",
+  "messages": [
+    {
+      "role": "user",
+      "text": "فري فاير سرفر إكس مود",
+      "timestamp": "2025-12-13T16:13:38.038Z"
+    },
+    {
+      "role": "model",
+      "text": "{\"action\": \"search_app\", \"query\": \"Free Fire x mode server\"}",
+      "timestamp": "2025-12-13T16:13:38.038Z"
+    }
+  ]
+}

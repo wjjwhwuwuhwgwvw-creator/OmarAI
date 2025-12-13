@@ -1,0 +1,21 @@
+{
+  "userId": "59150927179807@lid",
+  "lastUpdated": "2025-12-13T16:12:19.858Z",
+  "messages": [
+    {
+      "role": "user",
+      "text": "بيس2026",
+      "timestamp": "2025-12-13T16:12:18.584Z"
+    },
+    {
+      "role": "model",
+      "text": "{\"action\": \"search_app\", \"query\": \"PES 2026\"}",
+      "timestamp": "2025-12-13T16:12:18.585Z"
+    },
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. pes 2023 e football pro league (appId: com.PES.efootball.league.pro)\n2. EA Sports FC 24 Pes2023 Riddle (appId: com.ProLeague.PesFootballer)\n3. PES Football leaguee 23 (appId: com.DLS.ePESMASTERFootball23)\n4. PES 2018 (appId: com.SaraDivertis.PES2018)\n5. pes 2023-e football pro game (appId: com.koaieltani.nsjdkoratani)\n6. ePES 2024 Football DLSleague (appId: com.ePESFootballleaguedls2024)\n7. PES 18 (appId: com.dhaka.erun)\n8. PES 2013 (appId: com.antonios.pes2013)\n9. Cricket 2026 (appId: org.cricket.year2016.top.free.games)\n10. PES 2018 (appId: com.firstclassfootball.apeeovin)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:12:19.858Z"
+    }
+  ]
+}

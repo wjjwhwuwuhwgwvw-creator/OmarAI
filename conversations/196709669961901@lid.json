@@ -1,0 +1,11 @@
+{
+  "userId": "196709669961901@lid",
+  "lastUpdated": "2025-12-13T16:13:08.699Z",
+  "messages": [
+    {
+      "role": "model",
+      "text": "📋 قائمة التطبيقات المعروضة للمستخدم:\n1. Red Dead Redemption NETFLIX (appId: com.netflix.NGP.Kamo)\n2. Tips :  Red Dead Redemption - full (appId: llml.minervastorm.reddeadredemption)\n3. Red Dead Redemption (appId: com.rockstargames.rdr)\n4. Companion for Red Dead Redemption 2 (UNOFFICIAL) (appId: com.RASOCIETY.RDR2COMPANION)\n5. walkthrough for Red Dead Redemption 2020 Guide (appId: com.gracapps.rdred2g)\n6. Zombies and Guns - Dead Redemption (appId: sk.inlogic.zombiesandguns)\n7. Road Redemption (appId: kaos.drifttt)\n8. Netflix (appId: com.netflix.mediaclient)\n9. Wild West Cowboy Redemption (appId: com.StudioGamebit.WildWestCowboy)\n10. Call of Duty®: Mobile (appId: com.activision.callofduty.shooter)\n\n⚠️ مهم: إذا قال المستخدم رقم (1 أو 2 أو 3...)، استخدم download_app مع appId المناسب من القائمة أعلاه.",
+      "timestamp": "2025-12-13T16:13:08.699Z"
+    }
+  ]
+}

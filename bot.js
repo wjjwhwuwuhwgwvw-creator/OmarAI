@@ -23,6 +23,27 @@ const API_SERVER_URL = 'http://localhost:8000';
 // Bot Mode: 'all' = groups + private, 'groups' = groups only, 'private' = private only
 let BOT_MODE = 'all';
 
+// 2GB limit for regular users (VIP and Admin can download larger files)
+const MAX_REGULAR_USER_SIZE = 2 * 1024 * 1024 * 1024; // 2GB
+
+// Check if user can download large files
+function canDownloadLargeFile(senderPhone, isAdmin) {
+    return isAdmin || vipUsers.has(senderPhone);
+}
+
+// Get file size before downloading
+async function getFileSizeBeforeDownload(packageName) {
+    const API_URL = process.env.API_URL || 'http://localhost:8000';
+    try {
+        const headResponse = await axios.head(`${API_URL}/download/${packageName}`, { timeout: 30000 });
+        const contentLength = parseInt(headResponse.headers['content-length'] || '0', 10);
+        return contentLength;
+    } catch (e) {
+        console.log(`⚠️ فشل فحص حجم الملف: ${e.message}`);
+        return 0; // Unknown size, allow download
+    }
+}
+
 function setBotMode(mode) {
     const validModes = ['all', 'groups', 'private'];
     if (validModes.includes(mode.toLowerCase())) {
@@ -2798,7 +2819,7 @@ _ملاحظة: هذه الأوامر للمسؤولين فقط_`;
                 session.state = 'waiting_for_selection';
                 session.searchResults = [{ title: appName, appId: appId, index: 1 }];
                 userSessions.set(userId, session);
-                await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appName, session);
+                await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appName, session, isAdmin);
 
             } else if (geminiResponse.action === 'download_media') {
                 const url = geminiResponse.url;
@@ -3035,7 +3056,7 @@ _ملاحظة: هذه الأوامر للمسؤولين فقط_`;
                     session.state = 'waiting_for_selection';
                     session.searchResults = [{ title: appName, appId: appId, index: 1 }];
                     userSessions.set(userId, session);
-                    await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appName, session);
+                    await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appName, session, isAdmin);
 
                 } else if (geminiResponse.action === 'download_media') {
                     const url = geminiResponse.url;
@@ -3071,7 +3092,7 @@ _ملاحظة: هذه الأوامر للمسؤولين فقط_`;
         }
 
         const selectedApp = session.searchResults[selection - 1];
-        await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, selectedApp.appId, selectedApp.title, session);
+        await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, selectedApp.appId, selectedApp.title, session, isAdmin);
 
     } else if (session.state === 'waiting_for_recommendation_selection') {
         const selection = parseInt(text.trim());
@@ -3205,7 +3226,7 @@ _ملاحظة: هذه الأوامر للمسؤولين فقط_`;
                 session.searchResults = [{ title: appTitle, appId: appId, index: 1 }];
                 userSessions.set(userId, session);
 
-                await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appTitle, session);
+                await handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appTitle, session, isAdmin);
             } else {
                 await sendBotMessage(sock, remoteJid, { 
                     text: `ماعنديش نتائج على "${searchQuery}". جرب تكتب اسم التطبيق بالانجليزية${POWERED_BY}`
@@ -3226,7 +3247,7 @@ _ملاحظة: هذه الأوامر للمسؤولين فقط_`;
     }
 }
 
-async function handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appTitle, session) {
+async function handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appId, appTitle, session, isAdmin = false) {
     const numberEmojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
     const isGroup = remoteJid.endsWith('@g.us');
 
@@ -3254,6 +3275,34 @@ async function handleAppDownload(sock, remoteJid, userId, senderPhone, msg, appI
     }
 
     await sock.sendMessage(remoteJid, { react: { text: '⏳', key: msg.key } });
+
+    // Check file size before downloading (2GB limit for regular users)
+    const fileSize = await getFileSizeBeforeDownload(appId);
+    if (fileSize > 0) {
+        console.log(`📊 حجم الملف المتوقع: ${formatFileSize(fileSize)}`);
+        
+        if (fileSize > MAX_REGULAR_USER_SIZE && !canDownloadLargeFile(senderPhone, isAdmin)) {
+            await sock.sendMessage(remoteJid, { react: { text: '🚫', key: msg.key } });
+            await sendBotMessage(sock, remoteJid, { 
+                text: `🚫 *التطبيق كبير بزاف!*
+
+◄ حجم التطبيق: *${formatFileSize(fileSize)}*
+◄ الحد المسموح: *2 جيغا*
+
+⭐ *باش تحمّل تطبيقات أكبر من 2GB:*
+◄ كن VIP عضو
+◄ أو تواصل مع المطور
+
+💡 جرب تطبيق آخر أصغر${POWERED_BY}` 
+            }, msg);
+            
+            session.isDownloading = false;
+            stopDownloadTracking(senderPhone);
+            session.state = 'waiting_for_search';
+            userSessions.set(userId, session);
+            return;
+        }
+    }
 
     try {
         const appDetails = await getAppFromAPKPure(appId) || { title: appTitle, appId: appId };
