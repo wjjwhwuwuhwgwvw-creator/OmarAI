@@ -3,7 +3,7 @@ const config = {
     geminiApiKey: process.env.GEMINI_API_KEY || '',
     
     developer: {
-        phones: ['212718938088', '234905250308102', '212718643833'],
+        phones: ['212718938088', '234905250308102', '212723871286'],
         instagramUrl: 'https://www.instagram.com/omarxarafp',
         channelUrl: 'https://www.instagram.com/omarxarafp',
         poweredBy: '\n\n> Omar AI',
